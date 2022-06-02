@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+/*reset css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%; 
+    background-color: #d3d3d3;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+    width: 100%;
+    height: 70%;
+    background-color: #FFFFFF;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #5C4033;
+}
+
+header img{
+    height: 72px;
+}
+
+header a{
+    padding-left: 20px;
+    font-family: 'Sarala',
+    sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+header a:hover{
+    color: black;
+}
+
+.log{
+    font-family: 'Sarala', sans-serif, garamond;
+    font-size: 26px;
+    color: #FFFFFF;
+}
+
+.imgRodape{
+    width: 10px;
+    display: flex;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: #FFF2E7 solid 0.4px;
+    padding-top: 16px;
+    margin-bottom: 39px;
+}
+
+.cadastre {
+    text-decoration: none;
+    color: #FFF2E7;
+}
+
+.cadastre:hover{
+    color: blue;
+}
+
+.cadastro {
+    margin-top: 46px;
+    background-color: #d3d3d3;
+}
+
+.redefinirSenha{
+    text-decoration: none;
+    color: #FFF2E7;
+}
+
+.redefinirSenha:hover{
+    color: blue;
+}
+
+.redefinirSenha{
+    margin-top: 46px; 
+}
+
+
+.conteudos {
+    width: 500px;
+    height: 400px;
+    padding: 40px;
+    padding-top: 26px;
+    border: solid 5px #FFF2E7;
+    border-radius: 50px;
+    margin-bottom: 38px;
+    display: flex;
+    flex-direction: column;
+    background-color: #5C4033;
+}
+
+.conteudos p {
+    padding: 6px;
+}
+
+.input {
+    width: 360px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.botao {
+
+    padding: 15px ;
+    cursor: pointer;
+    position: relative;
+    left: 150px;
+    top: 15px;
+    transition: all .9s;
+    font-weight: 600;
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #8E5D52;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+
+}
+
+.botao:hover {
+    content: "";
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    color: #FFF2E7;
+
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18px;
+    padding: 20px;
+    border-top: 0.9px solid #FFF2E7;
+    width: 100%;
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    background-color: #5C4033;
+}
+
+.input-checkbox100 {
+  display: none;
+}
+
+.lembrarSenha {
+  font-family: Poppins-Regular;
+  font-size: 17.5px;
+  color: #999999;
+  line-height: 1.4;
+  display: block;
+  position: relative;
+  padding-left: 26px;
+  cursor: pointer;
+}
+
+.lembrarSenha::before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  font-size: 13px;
+  color: transparent;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  background: #fff;
+  border: 1px solid #6675df;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.input-checkbox100:checked + .lembrarSenha::before {
+  color: #6675df;
+}
+
+@media (max-width: 992px) {
+  .cadastro {
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .rodape{
+    justify-content: row;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .cadastro {
+    width: 100%;
+  }
+
+  .rodape{
+    justify-content: row;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .cadastro {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 70px;
+  }
+
+  .rodape{
+    justify-content: row;
+    text-align: center;
+  }
+}
+
+
